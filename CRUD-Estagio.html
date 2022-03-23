@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Mercadinho RS</title>
+    <link rel="stylesheet" href="./estilocss.css" />
+    <link rel="stylesheet" href="./htmlcss.css" />
+    <script type="text/javascript" src="./Função para adicionar uma nova linha n.js"></script>
+</head>
+
+<body>
+    <div id="nav">
+        Mercado RS
+    </div>
+    <section id="table">
+        <form method="POST">
+            <div id="input-data">
+                <input id="marca" class="input-text" placeholder="Marca" type="text" required />
+                <input id="produto" class="input-text" placeholder="Produto" type="text" required />
+                <input id="quantidade" class="input-text" placeholder="Quantidade" type="number" required />
+                <input id="data" class="input-text" placeholder="Data" type="date" required />
+                <input class="input-btn" type="submit" value="Enviar" onclick="return addToTable()" />
+            </div>
+        </form>
+        <table id="myTable">
+            <tr id="0">
+                <th>ID</th>
+                <th>Marca</th>
+                <th>Produto</th>
+                <th>Quantidade</th>
+                <th>Data de fabricação</th>
+                <th>Ação</th>
+            </tr>
+        </table>
+    </section>
+</body>
+
+</html>
